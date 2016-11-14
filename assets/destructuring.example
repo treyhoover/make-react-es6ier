@@ -1,0 +1,23 @@
+var foo = this.props.foo;
+var bar = this.props.bar;
+var baz = this.props.baz;
+
+var { foo, bar, baz } = this.props;
+
+function HelloWorld (props) {
+    return (
+        <span>{props.greeting}, ${props.thing}!</span>
+    );
+}
+
+function HelloWorld ({ greeting, thing }) {
+    return (
+        <span>{greeting}, ${thing}!</span>
+    );
+}
+
+var arr = [1, 2, 3];
+var first = arr[0];
+var second = arr[1];
+
+var [ first, second ] = arr;

@@ -1,0 +1,5 @@
+var x = 5;
+var y = 6;
+this.setState({ x: x, y: y });
+
+this.setState({ x, y });

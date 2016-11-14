@@ -1,0 +1,5 @@
+var theOldWay = ["Great", "Use callbacks", "ES5"].map(function (x) {
+    return "Make America " + x + " again.";
+});
+
+const theNewWay = ["Great", "Use callbacks", "ES5"].map(x => `Make America ${x} again`);

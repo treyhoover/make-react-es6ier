@@ -1,0 +1,11 @@
+const immutable = "true";
+
+immutable = false; // Uncaught TypeError: Assignment to constant variable.
+
+const aNormalObject = {
+    nothingToSeeHere: true
+};
+
+aNormalObject.nothingToSeeHere = false;
+
+console.log(aNormalObject); // {nothingToSeeHere: false}
