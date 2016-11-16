@@ -3,12 +3,7 @@ import React, { Component } from "react";
 import CodeSlide from 'spectacle-code-slide';
 
 // Import Spectacle Core tags
-import {
-  Deck,
-  Heading,
-  Slide,
-  Spectacle
-} from "spectacle";
+import { Deck, Slide, Spectacle } from "spectacle";
 
 // Import image preloader util
 import preloader from "spectacle/lib/utils/preloader";
@@ -17,6 +12,7 @@ import preloader from "spectacle/lib/utils/preloader";
 import createTheme from "spectacle/lib/themes/default";
 
 import Title from '../slides/Title';
+import LiveRefactorDemo from '../slides/LiveRefactorDemo';
 
 // Require CSS
 require("normalize.css");
@@ -109,6 +105,7 @@ export default () => (
           { loc: [15, 31] }
         ]}
       />
+      <Slide transition={[]} bgColor="primary"><LiveRefactorDemo /></Slide>
     </Deck>
   </Spectacle>
 );
