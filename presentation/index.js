@@ -37,7 +37,7 @@ const theme = createTheme({
 export default () => (
   <Spectacle theme={theme}>
     <Deck transition={[]}>
-      <Slide transition={["zoom"]} bgColor="title"><Title /></Slide>
+      <Slide transition={[]} bgColor="title"><Title /></Slide>
       <CodeSlide
         transition={[]}
         lang="js"
@@ -68,6 +68,45 @@ export default () => (
         ranges={[
           { loc: [0, 3] },
           { loc: [4, 5] }
+        ]}
+      />
+      <CodeSlide
+        transition={[]}
+        lang="js"
+        code={require("raw!../assets/destructuring.example")}
+        ranges={[
+          { loc: [0, 3] },
+          { loc: [4, 5] },
+          { loc: [6, 11] },
+          { loc: [12, 17] },
+          { loc: [18, 21] },
+          { loc: [22, 23] }
+        ]}
+      />
+      <CodeSlide
+        transition={[]}
+        lang="js"
+        code={require("raw!../assets/spread.example")}
+        ranges={[
+          { loc: [0, 4] },
+          { loc: [5, 6] },
+          { loc: [7, 8] },
+          { loc: [9, 11] },
+          { loc: [12, 13] }
+        ]}
+      />
+      <CodeSlide
+        transition={[]}
+        lang="js"
+        code={require("raw!../assets/class.example")}
+        ranges={[
+          { loc: [0, 3] },
+          { loc: [4, 8] },
+          { loc: [9, 14] },
+          { loc: [15, 20] },
+          { loc: [21, 31] },
+          { loc: [0, 14] },
+          { loc: [15, 31] }
         ]}
       />
     </Deck>

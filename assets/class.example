@@ -1,7 +1,31 @@
-function Person(name, age, gender) {
-    this.name = name;
-    this.age = age;
-    this.gender = gender;
+function Person(name) {
+    this.name = name || 'Stranger';
 }
 
-Person.prototype.
+function Developer(name, favoriteLibs) {
+    Person.call(this, name);
+    this.favoriteLibs = favoriteLibs || [];
+}
+
+Developer.prototype = Object.create(Person.prototype);
+Developer.prototype.constructor = Developer;
+Developer.prototype.addFavoriteLib = function (lib) {
+    this.favoriteLibs.push(lib);
+};
+
+class Person {
+    constructor(name = 'Stranger') {
+        this.name = name;
+    }
+}
+
+class Developer extends Person {
+    constructor(name, favoriteLibs = []) {
+        super(name);
+        this.favoriteLibs = favoriteLibs;
+    }
+
+    addFavoriteLib(lib) {
+        this.favoriteLibs.push(lib);
+    }
+}

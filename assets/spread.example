@@ -1,0 +1,13 @@
+var beginning = ['a'];
+var end = ['d', 'e', f'];
+
+var combined = beginning.concat(['b', 'c']).concat(end); // ['a', 'b', 'c', 'd', 'e', 'f']
+
+var combined = [...beginning, 'b', 'c', ...end]; // ['a', 'b', 'c', 'd', 'e', 'f']
+
+Math.max(1, 2, 3); // 3;
+
+var numbers = [1, 2, 3];
+Math.max.apply(null, numbers); // 3
+
+Math.max(...numbers); // 3
