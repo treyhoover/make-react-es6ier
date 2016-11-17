@@ -1,7 +1,7 @@
 {
-  "name": "spectacle-boilerplate",
+  "name": "make-react-es6ier",
   "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
+  "description": "ReactJS Presentation",
   "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -13,6 +13,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "howler": "^2.0.1",
     "normalize.css": "3.0.3",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
@@ -42,9 +43,11 @@
     "is-buffer": "^1.1.1",
     "markdown-loader": "^0.1.7",
     "node-libs-browser": "^0.5.3",
+    "node-sass": "^3.13.0",
     "raw-loader": "^0.5.1",
     "react-transform-hmr": "^1.0.4",
     "rimraf": "^2.4.4",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.0",
     "surge": "latest",
     "url-loader": "^0.5.6",
